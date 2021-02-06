@@ -44,7 +44,7 @@ img {
     .spinner-title {
       color: #fff;
       letter-spacing: 2px;
-      font-size: 30px;
+      font-size: 40px;
       cursor: pointer;
       text-shadow: 0 0 5px rgba(255, 65, 65, 1), 0 0 10px rgba(255, 65, 65, 1),
         0 0 20px rgba(255, 65, 65, 1), 0 0 40px rgba(255, 65, 65, 1);

@@ -16,11 +16,15 @@
             <template v-if="filterName === currentWheather.locationName">
               <div class="info-list">
                 <p>
+                  <font-awesome-icon icon="thermometer-half" />
                   {{ currentWheather.maxT }} ℃ - {{ currentWheather.minT }} ℃
                 </p>
                 <p>{{ currentWheather.description }}</p>
                 <p>{{ currentWheather.comfort }}</p>
-                <p>降雨機率: {{ currentWheather.rainPossibility }} %</p>
+                <p>
+                  <font-awesome-icon icon="umbrella" /> 機率:
+                  {{ currentWheather.rainPossibility }} %
+                </p>
               </div>
             </template>
           </transition>
@@ -68,12 +72,12 @@ export default {
     top: 8%;
     font-size: 60px;
     color: $titleColor;
-    text-shadow: 3px 3px 12px gold;
+    text-shadow: $text-shadow;
   }
   .content {
     font-size: 50px;
     color: $contentColor;
-    text-shadow: 2px 2px 10px gold;
+    text-shadow: $text-shadow;
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
@@ -110,8 +114,8 @@ export default {
       font-size: 20px;
       font-weight: normal;
       color: $contentColor;
-      text-shadow: 1px 1px 5px gold;
-      border: 1px solid #fff;
+      text-shadow: none;
+      border: 1px dotted $strokeColor;
       p {
         margin: 5px;
       }
@@ -120,10 +124,10 @@ export default {
   .footer {
     position: absolute;
     bottom: 10%;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: normal;
     color: $contentColor;
-    text-shadow: 2px 2px 10px gold;
+    text-shadow: $text-shadow;
   }
 }
 </style>

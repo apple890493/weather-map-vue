@@ -1,9 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" class=".theme-ligh">
     <template v-if="isLoading">
-      <!-- <div> -->
       <Spinner @loadingHandler="loadingHandler" />
-      <!-- </div> -->
     </template>
     <template v-else>
       <TaiwanMap
@@ -119,7 +117,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: $nightBgColor;
+  background-color: $bgColor;
   display: flex;
   justify-content: center;
 }

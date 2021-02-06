@@ -431,7 +431,7 @@ export default {
   svg {
     height: 100vh;
     path {
-      stroke: white;
+      stroke: $strokeColor;
       fill: transparent;
       transition: 0.5s;
       cursor: pointer;
