@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class=".theme-ligh">
+  <div id="app" :class="currentTheme">
     <template v-if="isLoading">
       <Spinner @loadingHandler="loadingHandler" />
     </template>
@@ -13,6 +13,7 @@
         :nowDate="nowDate"
         :currentWheather="currentWheather"
       />
+      <Theme :currentTheme="currentTheme" @swicthTheme="swicthTheme" />
     </template>
   </div>
 </template>
@@ -21,6 +22,7 @@
 import TaiwanMap from "./components/TaiwanMap.vue";
 import WeatherInfo from "./components/WeatherInfo.vue";
 import Spinner from "./components/Spinner.vue";
+import Theme from "./components/Theme.vue";
 import { parseDate2Str } from "@/util/helper.js";
 import axios from "axios";
 
@@ -32,9 +34,11 @@ export default {
     TaiwanMap,
     WeatherInfo,
     Spinner,
+    Theme,
   },
   data() {
     return {
+      currentTheme: localStorage.getItem("theme-color") || "theme-dark",
       filterName: "",
       nowDate: parseDate2Str(new Date(), "YYYY-MM-DD HH:mm:ss"),
       timer: "",
@@ -50,6 +54,10 @@ export default {
     };
   },
   methods: {
+    swicthTheme(theme) {
+      localStorage.setItem("theme-color", theme);
+      this.currentTheme = localStorage.getItem("theme-color");
+    },
     loadingHandler() {
       this.isLoading = !this.isLoading;
     },
