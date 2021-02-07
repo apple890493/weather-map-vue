@@ -17,7 +17,7 @@ Vue.js + Sass + API 開發的互動式地圖天氣預報
 
 ### Demo
 
-(https://apple890493.github.io/weather-map-vue/)
+https://apple890493.github.io/weather-map-vue/
 
 ### 安裝
 
