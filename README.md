@@ -1,29 +1,34 @@
-# wheather-app
+# weather-map
 
-## Project setup
+Vue.js + Sass + API 開發的互動式地圖天氣預報
+
+## 網站功能
+
+-使用者可以透過滑鼠挑選縣市 -點擊後可以取得該地區的 12 小時天氣狀況 -使用者可以依照喜愛切換 day/night 主題
+
+### 專案畫面
+
+![loading view](https://images.unsplash.com/photo-1573900941478-7cc800f708f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80)
+
+![main view]()
+
+### 安裝
 
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 執行
 
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 開發環見
 
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+-vue-fontawesome: ^2.0.2
+-axios: ^0.21.1
+-bootstrap: ^4.6.0
+-core-js: ^3.6.5
+-dayjs: ^1.10.4
+-vue: ^2.6.11
