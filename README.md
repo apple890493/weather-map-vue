@@ -8,7 +8,7 @@ Vue.js + Sass + API 開發的互動式地圖天氣預報
 
 ### 專案畫面
 
-<img src="https://github.com/apple890493/weather-map-vue/blob/main/pic/1.jpg" width="200" alt="loading view">
+<img src="https://github.com/apple890493/weather-map-vue/blob/main/pic/1.JPG" width="200" alt="loading view">
 
 <img src="https://github.com/apple890493/weather-map-vue/blob/main/pic/2.jpg" alt="main view">
 
